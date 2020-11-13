@@ -1,4 +1,4 @@
-// Copyright (c) 2019, Taegus Cromis, The Conceal Developers
+// Copyright (c) 2019, Taegus Cromis, The Conceal Developers, Cache
 //
 // Please see the included LICENSE file for more information.
 
@@ -50,8 +50,8 @@ try {
 if (cmdOptions.help) {
   const sections = [
     {
-      header: 'Conceal Node Guardian',
-      content: 'This is a guardian app for the conceal node daemon. Handles restarts, sends notifications, registers to pool...'
+      header: 'Cache Node Guardian',
+      content: 'This is a guardian app for the cache node daemon. Handles restarts, sends notifications, registers to pool...'
     },
     {
       header: 'Options',
@@ -126,7 +126,7 @@ if (cmdOptions.help) {
   const usage = commandLineUsage(sections);
   console.log(usage);
 } else if (cmdOptions.version) {
-  console.log(vsprintf('\nConceal node guardian version %s\n', [pjson.version]));
+  console.log(vsprintf('\nCache node guardian version %s\n', [pjson.version]));
 } else {
   const rootPath = process.cwd();
   const configFileName = cmdOptions.config || path.join(rootPath, "config.json");

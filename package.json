@@ -1,17 +1,17 @@
 {
   "name": "nodeguard",
   "version": "0.5.7",
-  "description": "Conceal Node Guard",
+  "description": "Cache Node Guard",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ConcealNetwork/conceal-guardian.git"
+    "url": "git+https://github.com/Cache-core/cache-guardian.git"
   },
   "keywords": [
-    "conceal",
+    "cache",
     "cryptocurrency",
     "guardian",
     "daemon",
@@ -20,9 +20,9 @@
   "author": "Taegus",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ConcealNetwork/conceal-guardian/issues"
+    "url": "https://github.com/Cache-core/cache-guardian/issues"
   },
-  "homepage": "https://github.com/ConcealNetwork/conceal-guardian#readme",
+  "homepage": "https://github.com/Cache-core/cache-guardian#readme",
   "dependencies": {
     "command-line-args": "^5.1.1",
     "command-line-usage": "^5.0.5",

@@ -3,7 +3,7 @@
 /conceald.log
 /conceald
 /package-lock.json
-/config.json
+#/config.json
 
 .idea
 /bin

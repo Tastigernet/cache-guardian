@@ -1,5 +1,5 @@
 [Unit]
-Description=Conceal Guardian
+Description=Cache Guardian
 
 [Service]
 Type=simple
