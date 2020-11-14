@@ -1,7 +1,7 @@
 /node_modules
-/conceald.exe
-/conceald.log
-/conceald
+/cache-daemon.exe
+/cache-daemon.log
+/cache-daemon
 /package-lock.json
 #/config.json
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2019, Taegus Cromis, The Conceal Developers
+// Copyright (c) 2019, Taegus Cromis, The Conceal Developers, Cache
 //
 // Please see the included LICENSE file for more information.
 
@@ -10,7 +10,7 @@ const fs = require("fs");
 module.exports = {
   ensureUserDataDir: function () {
     var userDataDir = process.env.APPDATA || (process.platform === "darwin" ? process.env.HOME + "/Library/Application Support" : process.env.HOME + "/.local/share");
-    userDataDir = path.join(userDataDir, "ccxNodeGuard");
+    userDataDir = path.join(userDataDir, "cxcheNodeGuard");
 
     if (!fs.existsSync(userDataDir)) {
       shell.mkdir('-p', userDataDir);
@@ -39,9 +39,9 @@ module.exports = {
   },
   getNodeExecutableName: function () {
     if (process.platform === "win32") {
-      return 'conceald.exe';
+      return 'cache-daemon.exe';
     } else {
-      return 'conceald';
+      return 'cache-daemon';
     }
   },
   getGuardianExecutableName: function () {

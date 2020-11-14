@@ -1,7 +1,7 @@
 <div class="dash-headline-two">
   <div>
     <h4 class="tx-white mg-b-5">Welcome</h4>
-    <p class="mg-b-0">Today is March 20, 2018</p>
+    <p class="mg-b-0" id="datetime" </p>
   </div>
   <div class="d-h-t-right" id="nodeBasicInfo">
     <div class="summary-item">
@@ -26,7 +26,7 @@
     <h4 class="tx-white mg-b-3">General Info</h4>
   </div>
   <div>
-    <a href="" class="btn btn-primary-outline">Show on Explorer</a>
+    <a href="https://explorer.cxche.org/" class="btn btn-primary-outline">Show Official Explorer</a>
   </div>
 </div><!-- d-flex -->
 
@@ -113,5 +113,6 @@
   </div><!-- col-4 -->
 </div><!-- row -->
 <script>
-  // no code so far
+  var dt = new Date();
+  document.getElementById("datetime").innerHTML = dt.toLocaleString();
 </script>

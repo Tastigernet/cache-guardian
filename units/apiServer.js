@@ -1,4 +1,4 @@
-// Copyright (c) 2019, Taegus Cromis, The Conceal Developers
+// Copyright (c) 2019, Taegus Cromis, The Conceal Developers, Cache
 //
 // Please see the included LICENSE file for more information.
 const readLastLines = require('read-last-lines');
@@ -24,12 +24,12 @@ module.exports = {
     app.get("/getInfo", (req, res) => {
       var statusResponse = onDataCallback();
       res.set('Access-Control-Allow-Origin', '*');
-      res.set('X-Powered-By', 'ConcealNodeGuard');
+      res.set('X-Powered-By', 'CacheNodeGuard');
       res.json(statusResponse);
     });
 
     app.get("/getDaemonLog", (req, res) => {
-      readLastLines.read(path.join(nodeDirectory, 'conceald.log'), 500).then((lines) => {
+      readLastLines.read(path.join(nodeDirectory, 'cache-daemon.log'), 500).then((lines) => {
         res.send(lines);
       });
     });

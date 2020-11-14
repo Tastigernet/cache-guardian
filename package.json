@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Cache-core/cache-guardian#readme",
   "dependencies": {
+    "cache-api-js": "^0.1.0",
     "command-line-args": "^5.1.1",
     "command-line-usage": "^5.0.5",
     "conceal-api": "^0.7.5",

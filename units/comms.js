@@ -1,15 +1,15 @@
-// Copyright (c) 2019, Taegus Cromis, The Conceal Developers
+// Copyright (c) 2019, Taegus Cromis, The Conceal Developers, Cache
 //
 // Please see the included LICENSE file for more information.
 
 const vsprintf = require("sprintf-js").vsprintf;
 const moment = require("moment");
-const CCX = require("conceal-api");
+const CXCHE = require("cache-api-js");
 
 module.exports = {
   RpcCommunicator: function (configOpts, errorCallback) {
-    // create the CCX api interface object
-    var CCXApi = new CCX("http://127.0.0.1", "3333", configOpts.node.port, (configOpts.node.rfcTimeout || 5) * 1000);
+    // create the CXCHE api interface object
+    var CXCHEApi = new CXCHE("http://127.0.0.1", "3333", configOpts.node.port, (configOpts.node.rfcTimeout || 5) * 1000);
     var checkInterval = null;
     var timeoutCount = 0;
     var IsRunning = false;
@@ -39,7 +39,7 @@ module.exports = {
 
     function checkAliveAndWell() {
       if (IsRunning) {
-        CCXApi.info().then(data => {
+        CXCHEApi.info().then(data => {
           var heightIsOK = true;
           infoData = data;
 
