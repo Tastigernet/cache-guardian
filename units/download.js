@@ -1,4 +1,4 @@
-// Copyright (c) 2019, Taegus Cromis, The Conceal Developers, Cache
+// Copyright (c) 2019-2021, Taegus Cromis, The Conceal Developers, Cache
 //
 // Please see the included LICENSE file for more information.
 
@@ -14,8 +14,8 @@ const path = require("path");
 const fs = require("fs");
 
 // a message if you are on the wrong OS and there is no precompiled binaries for that OS.
-const wrongLinuxOSMsg = "Only Ubuntu 16.04 and 18.04 have precompiled binaries, on other linux systems you need to build the daemon yourself. Reffer to: https://github.com/Cache-core/cache-core";
-const wrongOSMsg = "This operating system has no precompiled binaries you need to build the daemon yourself. Reffer to: https://github.com/Cache-core/conceal-core";
+const wrongLinuxOSMsg = "Only Ubuntu 16.04 and 18.04 have precompiled binaries, on other linux systems you need to build the daemon yourself. Reffer to: https://github.com/Cache-core/cache";
+const wrongOSMsg = "This operating system has no precompiled binaries you need to build the daemon yourself. Reffer to: https://github.com/Cache-core/cache";
 
 // Define a function to filter releases.
 function filterRelease(release) {
@@ -99,7 +99,7 @@ module.exports = {
       }
     };
 
-    downloadRelease('Cache-core', 'cache-core', finalTempDir, filterRelease, filterAssetNode, true)
+    downloadRelease('Cache-core', 'Cache', finalTempDir, filterRelease, filterAssetNode, true)
       .then(function () {
         fs.readdir(finalTempDir, function (err, items) {
           if (items.length > 0) {

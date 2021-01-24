@@ -1,7 +1,7 @@
 {
   "node": {
     "args": [],
-    "port": 40000,
+    "port": 39000,
     "rfcTimeout": 10,
     "bindAddr": "0.0.0.0"
   },
@@ -17,7 +17,7 @@
   },
   "pool": {
     "notify": {
-      "url": "https://explorer.cxche.org/pool/update",
+      "url": "https://pool.explorer.cxche.org/pool/update",
       "interval": 30
     }
   }

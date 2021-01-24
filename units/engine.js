@@ -1,4 +1,4 @@
-// Copyright (c) 2019, Taegus Cromis, The Conceal Developers, Cache
+// Copyright (c) 2019-2021, Taegus Cromis, The Conceal Developers, Cache
 //
 // Please see the included LICENSE file for more information.
 
@@ -275,7 +275,7 @@ exports.NodeGuard = function (cmdOptions, configOpts, rootPath, guardVersion) {
         // check node
         if (nodeData) {
           request.get({
-            url: 'https://api.github.com/repos/Cache-core/cache-core/releases/latest',
+            url: 'https://api.github.com/repos/Cache-core/Cache/releases/latest',
             headers: { 'User-Agent': 'Cache Node Guardian' },
             json: true
           }, (err, res, release) => {

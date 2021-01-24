@@ -1,4 +1,4 @@
-// Copyright (c) 2019, Taegus Cromis, The Conceal Developers, Cache
+// Copyright (c) 2019-2021, Taegus Cromis, The Conceal Developers, Cache
 //
 // Please see the included LICENSE file for more information.
 
@@ -62,7 +62,7 @@ function notifyViaEmail(config, msgText, msgType, nodeData) {
   const mailOptions = {
     from: oPath.get(config, 'error.notify.email.message.from', ''),
     to: oPath.get(config, 'error.notify.email.message.to', ''),
-    subject: oPath.get(config, 'error.notify.email.message.subject', 'Conceal Guardian Error'),
+    subject: oPath.get(config, 'error.notify.email.message.subject', 'Cache Guardian Error'),
     text: bodyContentPlain, // plain text body
     html: bodyContentHTML  // html body
   };
