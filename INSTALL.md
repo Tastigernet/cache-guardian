@@ -52,7 +52,7 @@ You will be presented with few questions, answer them and you will be ready to g
 
 **Questions explanations:**
 
-> Please input the path to the "conceald" executable (if you do not know what to put in, leave it empty)
+> Please input the path to the "cache-daemon" executable (if you do not know what to put in, leave it empty)
 
 Absolute path to `cache-daemon` executable. If left empty the Guardian will try to look in project's directory and use that one. If `cache-daemon` is not found it will try to download the latest one.
 

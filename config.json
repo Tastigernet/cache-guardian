@@ -1,7 +1,13 @@
 {
   "node": {
-    "args": [],
-    "port": 39000,
+    "args": [
+        "--rpc-bind-ip",
+        "0.0.0.0",
+     "--rpc-bind-port",
+        "39000"
+    ],
+    "port": 38999,
+    "name":"TestNode",
     "rfcTimeout": 10,
     "bindAddr": "0.0.0.0"
   },
@@ -13,12 +19,7 @@
     "maxInitTime": 900
   },
   "api": {
-    "port": 8080
-  },
-  "pool": {
-    "notify": {
-      "url": "https://pool.explorer.cxche.org/pool/update",
-      "interval": 30
-    }
+    "port": 8000
   }
 }
+

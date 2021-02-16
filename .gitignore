@@ -3,10 +3,11 @@
 /cache-daemon.log
 /cache-daemon
 /package-lock.json
-#/config.json
+/config.json
 
 .idea
 /bin
 /.vscode
 /.scannerwork
 /guardian-win64.exe
+/checkpoints.csv

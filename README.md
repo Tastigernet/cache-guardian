@@ -57,10 +57,10 @@ You can use [sample configuration](config.json.sample) and modify it for your ne
          "--rpc-bind-ip",
          "127.0.0.1",
          "--rpc-bind-port",
-         "40000"
+         "39000"
       ],
       "path":"C:\\Path\\To\\cache-daemon.exe",
-      "port":40000,
+      "port":38999,
       "name":"TestNode",
       "bindAddr":"0.0.0.0",
       "feeAddr":"your fee CXCHE address"
@@ -95,7 +95,7 @@ You can use [sample configuration](config.json.sample) and modify it for your ne
       "maxInitTime":600
    },
    "api":{
-      "port":8080
+      "port":8000
    },
    "pool":{
       "notify":{
