@@ -48,19 +48,19 @@ Please refer to [installation page](INSTALL.md) for detailed instructions how to
 
 The Guardian can be configured manually by creating `config.json` file in the project's root directory or by using interactive setup (refer to [installation page](INSTALL.md) for instructions how to run interactive setup).
 
-You can use [sample configuration](config.json.sample) and modify it for your needs.
+You can use [sample configuration](config.json.sample) and modify it for your needs as exampled below.
 
 ```
 {
    "node":{
       "args":[
          "--rpc-bind-ip",
-         "127.0.0.1",
-         "--rpc-bind-port",
-         "39000"
+         "0.0.0.0",
+        "--load-checkpoints",
+        "checkpoints.csv"
       ],
       "path":"C:\\Path\\To\\cache-daemon.exe",
-      "port":38999,
+      "port":39000,
       "name":"TestNode",
       "bindAddr":"0.0.0.0",
       "feeAddr":"your fee CXCHE address"
@@ -115,7 +115,7 @@ You can use [sample configuration](config.json.sample) and modify it for your ne
 * **node**
   * args: The arguments that get appended to the monitored process.
   * path: The path of the process. If omited it uses the same path where the guardian is located
-  * port: The port on which conceald is running
+  * port: The port on which cache-daemon is running
   * name: Name of the node. If omited it uses the hostname.
   * feeAddr: The CXCHE address on which the transaction fee will be sent in case of remote node.
   * bindAddr: The address on which you listen. 127.0.0.1 for localhost only. 0.0.0.0 for outside accesible node.
@@ -263,7 +263,7 @@ Please refer to [installation page](INSTALL.md) for detailed instructions how to
 
 ## API
 
-The Guardian has an option to run HTTP server providing some general info about the node.  
+The Guardian has an option to run HTTP server providing some general info about the node.
 API serves a single endpoint - `/getInfo`.
 
 Sample request:

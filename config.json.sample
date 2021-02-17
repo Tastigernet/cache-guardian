@@ -1,12 +1,8 @@
 {
   "node": {
     "args": [
-        "--rpc-bind-ip",
-        "127.0.0.1",
-        "--rpc-bind-port",
-        "39000"
     ],
-    "port": 38999,
+    "port": 39000,
     "name":"TestNode"
     "rfcTimeout": 10,
     "bindAddr": "0.0.0.0"

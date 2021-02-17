@@ -3,10 +3,10 @@
     "args": [
         "--rpc-bind-ip",
         "0.0.0.0",
-     "--rpc-bind-port",
-        "39000"
+        "--load-checkpoints",
+        "checkpoints.csv"
     ],
-    "port": 38999,
+    "port": 39000,
     "name":"TestNode",
     "rfcTimeout": 10,
     "bindAddr": "0.0.0.0"
